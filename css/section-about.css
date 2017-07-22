@@ -1,0 +1,47 @@
+section.about {
+	/*background-color: pink*/
+}
+section.about .row {
+	min-height: 445px;
+}
+
+section.about .row .bg-about {
+	background-image: url(../images/bg-about.png);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	margin: -100px 0;
+}
+
+section.about .row .partern {
+	background-image: url(../images/pantern.png);
+	background-repeat: no-repeat;
+	background-size: cover; 
+	margin: -100px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+section.about .row .partern .hc-1 {
+	width: 50%;
+	color: #fff;
+	padding-left: 45px;
+	animation: fade 4s ease-in-out forwards;
+}
+
+section.about .row .partern .hc-1 h3 {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+section.about .row .partern .hc-1 p {
+	margin: 45px 0 30px 0;
+}
+
+@media (max-width: 575px) {
+	section.about .row .partern .hc-1 {
+		width: 100%;
+		color: #fff;
+		padding: 0;
+		text-align: center;
+	}
+}

@@ -1,0 +1,23 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+section {
+	padding: 100px 0;
+}
+.home-cta {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.home-cta span {
+	color: #f13e4b;
+}

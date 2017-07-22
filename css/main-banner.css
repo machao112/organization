@@ -1,0 +1,51 @@
+section.main-banner {
+	height: 800px;
+	width: 100%;
+	background-image: url(../images/bg-banner.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+section.main-banner .row .col {
+	margin-top: 150px;
+	animation: fade 4s ease-in-out forwards;
+	opacity: 0;
+}
+
+@keyframes fade {
+	from {opacity: 0}
+	to {opacity: 1;}
+}
+
+section.main-banner h1 {
+	font-size: 60px;
+	font-weight: 300;
+}
+
+section.main-banner h1 span {
+	display: block;
+	font-weight: 900;
+	font-size: 65px
+}
+
+section.main-banner p {
+	max-width: 450px;
+	margin: 40px 0;
+}
+
+section .donate {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 40px;
+	background-color: #000;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+@media (max-width: 450px) {
+	section.main-banner .row .col {
+		margin-top: 0;
+	}
+}

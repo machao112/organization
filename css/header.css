@@ -1,0 +1,114 @@
+header {}
+
+header .dark-bar {
+	/*height: 40px;*/
+	background-image: url(../images/dark-bar.png);
+	text-align: right;
+}
+header .dark-bar .row {
+	min-height: 40px;
+}
+header .dark-bar span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	line-height: 30px;
+	font-size: 18px;
+	margin: 0 5px;
+}
+
+header .wrap-menu .container{
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .wrap-menu .logo {
+	width: 195px;
+	height: 70px;
+	background-image: url(../images/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+header .wrap-menu .menu-bar ul:after {
+	content: ''; 
+	display: block;
+	clear: both;
+}
+
+header .wrap-menu .menu-bar ul li {
+	float: left
+}
+
+header .wrap-menu .menu-bar ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+header .wrap-menu .menu-bar .toggle-mobile-menu {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	/*background-color: pink;*/
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	display: none;
+}
+header .wrap-menu .menu-bar .toggle-mobile-menu span,
+header .wrap-menu .menu-bar .toggle-mobile-menu span:after,
+header .wrap-menu .menu-bar .toggle-mobile-menu span:before {
+	content: '';
+	width: 100%;
+	height: 3px;
+	left: 0;
+	background: black;
+	position: absolute;
+	border-radius: 30px;
+}
+header .wrap-menu .menu-bar .toggle-mobile-menu span:after {
+	top: 15px;
+}
+header .wrap-menu .menu-bar .toggle-mobile-menu span:before {
+	bottom: 15px;
+}
+@media (max-width: 500px) {
+	header .wrap-menu .container {
+		display: block;
+		height: auto;
+		text-align: center;
+	}
+	header .wrap-menu .menu-bar {
+		margin-bottom: 20px;
+	}
+	header .wrap-menu .menu-bar ul {
+		background-color: rgba(0,0,0,0.5);
+		clear: both;
+		display: none;
+	}
+
+	header .wrap-menu .menu-bar ul.expanded {
+		display: block;
+	}
+
+	header .wrap-menu .menu-bar ul li{
+		float: none;
+		text-align: left;
+	}
+
+	header .wrap-menu .logo {
+		display: inline-block;
+	}
+
+	header .wrap-menu .menu-bar .toggle-mobile-menu {
+		display: block;
+	}
+}
+
